@@ -4,6 +4,7 @@ void VecAndMap::fillVec(std::vector<int> *vec, int count)
 {
 	try
 	{
+		vec->reserve(count);
 		for (int i = 0; i < count; i++)
 			vec->push_back(rand() % MAX_VALUE + 1);
 	}
